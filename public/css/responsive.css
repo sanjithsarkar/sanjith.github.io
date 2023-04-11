@@ -1,0 +1,45 @@
+/*================================================== 
+                Bootstrap 5 Media Queries
+====================================================*/
+
+/* Large Devices (Desktop & Laptops) */
+@media (min-width: 1200px) {
+    #home-heading h1 {
+        color: #fff;
+    }
+}
+
+/* Medium Devices (Landscape Tablets & Medium Desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .slick-next.slick-arrow {
+        background: #bbb;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Medium Devices (Portrait Tablets & Small Desktops) */
+@media (min-width: 768px) and (max-width: 991px) {
+    #home-heading h1 {
+        color: blue;
+    }
+}
+
+/* Medium Devices (Landscape Phone & Portrait Tablets) */
+@media (max-width: 767px) {
+
+    /* ----------------------------
+            About
+    -------------------------------*/
+    .about-content {
+        padding-top: 45px;
+    }
+
+/* --------------------------------
+            Portfolio
+-----------------------------------*/
+#portfolio-content {
+	padding-top: 45px;
+	padding-left: 22px;
+}
+}
