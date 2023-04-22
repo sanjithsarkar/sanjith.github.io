@@ -215,7 +215,23 @@ section {
 	font-size: 30px;
 	font-family: "Raleway";
 	font-weight: 200;
-	padding-bottom: 45px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.about_title h2::after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 50px;
+	height: 3px;
+	background: #f4c613;
+	bottom: 0;
+	left: calc(50% - 25px);
+}
+
+#about-full-div {
+	margin-top: 40px;
 }
 
 .about-content {
@@ -262,6 +278,19 @@ section {
 	font-family: "Raleway";
 	font-weight: 300;
 	display: inline-block;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.skill-heading h3::after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 50px;
+	height: 3px;
+	background: #f4c613;
+	bottom: 0;
+	left: calc(50% - 25px);
 }
 
 .skill-content h3 {
@@ -450,6 +479,26 @@ hr {
 /* ========================================================
                     Portfolio
 ===========================================================*/
+
+.portfolio-heading h3 {
+	font-size: 25px;
+	font-family: "Raleway";
+	font-weight: 300;
+	display: inline-block;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.portfolio-heading h3::after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 50px;
+	height: 3px;
+	background: #f4c613;
+	bottom: 0;
+	left: calc(50% - 25px);
+}
 
 .slick-prev.slick-arrow {
 	background: #bbb;

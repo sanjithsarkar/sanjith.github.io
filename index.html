@@ -68,11 +68,12 @@
       <!----------------------------------- Sweetalert ----------------------------------------->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-     <!-- <script src="https://cdn.jsdelivr.net/npm/typeit@7.1.2/dist/typeit.min.js"></script> -->
-
     <!----------------------------------- Type-it ----------------------------------------->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.0.2/typeit.min.js" integrity="sha512-izh01C0sD66AuIVp4kRaEsvCSEC5bgs3n8Bm8Db/GhqJWei47La76LGf8Lbm8UHdIOsn+I7SxbeVLKb1k2ExMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+        <!--------------------------  AOS css  -------------------->
+        <!-- <link rel="stylesheet" href="{{ asset('css/aos/aos.css') }}"> -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.css" />
 
 </head>
 
@@ -84,7 +85,7 @@
         </div>
     </div>
 
-    <header id="header">
+<header id="header">
     <div class="header-height">
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container">
@@ -196,21 +197,21 @@
     <div class="content-box-lg">
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <div class="col-md-10">
+                <div class="col-md-10" data-aos="fade-up"  data-aos-duration="1000">
                     <div class="about_title d-flex justify-content-center">
                         <h2>About Me</h2>
                     </div>
                     <div class="row" id="about-full-div">
-                        <div class="col-md-6 col-sm-12">
+                        <div class="col-md-6" data-aos="zoom-in"  data-aos-duration="1500">
                             <div class="about_content wow slideInLeft" data-wow-duration="2s">
                                 <div class="about-content-inner">
-                                    <img src="image/profile/about.JPG" alt="no image" height="100%"
+                                    <img src="image/profile/about.JPG" alt="" height="100%"
                                         width="100%">
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-6 col-sm-12">
+                        <div class="col-md-6" data-aos="zoom-in"  data-aos-duration="1500">
                             <div class="about-content wow slideInRight" data-wow-duration="2s">
                                 <div class="about-content-inner">
                                     <h2>Myself</h2>
@@ -234,19 +235,21 @@
 </section>
 
 
+
 <!---------------------------------------  Skill ------------------------------------->
+
 
 <section id="skill">
     <div class="content-box-lg">
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <div class="col-md-8">
+                <div class="col-md-8" data-aos="fade-up"  data-aos-duration="1000">
                     <div class="skill-heading d-flex justify-content-center">
                         <h3>Skill & Technology</h3>
                     </div>
-                    <div id="progress-elements" class="progressElement wow fadeInUp">
+                    <div id="progress-elements" class="progressElement" data-aos="zoom-in"  data-aos-duration="1500">
                         <div class="row">
-                            <div class="col-md-6 skills">
+                            <div class="col-md-6 skills" >
                                 <div class="skill-content">
                                     <h3>Frontend</h3>
 
@@ -341,9 +344,12 @@
                                             </div>
                                         </div>
                                     </div>
+
+
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -360,7 +366,7 @@
     <div class="content-box-md">
         <div class="container">
             <div class="row  d-flex justify-content-center">
-                <div class="col-md-10">
+                <div class="col-md-10" data-aos="fade-up"  data-aos-duration="1000">
                     <div class="service-heading">
                         <h3 class="d-flex justify-content-center">Services
                             <img src="" alt="">
@@ -369,7 +375,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-4" data-aos="zoom-in"  data-aos-duration="1500">
                             <div class="service-content">
                                 <div class="service-icon">
                                     <i class="fa-solid fa-desktop"></i>
@@ -386,7 +392,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-4" data-aos="zoom-in"  data-aos-duration="1500">
                             <div class="service-content">
                                 <div class="service-icon">
                                     <i class="fa-solid fa-desktop"></i>
@@ -403,7 +409,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-4" data-aos="zoom-in"  data-aos-duration="1000">
                             <div class="service-content">
                                 <div class="service-icon">
                                     <i class="fa-solid fa-bug"></i>
@@ -426,75 +432,71 @@
 </section>
 
 
+
 <!--------------------------------- Portfolio ----------------------------->
+
 
 <section id="portfolio">
     <div class="content-box-md">
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="col-md-10">
-                    <div class="portfolio-">
+                    <div class="portfolio-heading">
                         <h3 class="d-flex justify-content-center">Portfolio</h3>
-                        <div class="slide">
-                            <div>
-                                <div class="row ">
-                                    <div class="col col-sm-12 col-md-6">
-                                        <div class="portfolio-image d-flex justify-content-center">
-                                            <img src="image/project/school.png" alt="not fouond" width="90%" height="100%">
-                                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div>
+                            <div class="row ">
+                                <div class="col col-sm-12 col-md-6">
+                                    <div class="portfolio-image d-flex justify-content-center">
+                                        <img src="image/project/school.png" alt="" width="90%"
+                                            height="100%">
                                     </div>
-                                    <div class="col col-sm-12 col-md-6">
-                                        <div id="portfolio-content">
-                                            <h3>School Management</h3>
-                                            <p>School Management develop with laravel.</p>
-                                            <span>Technology Used</span>
-                                            <div class="technology">
-                                                <p><i class="fa-solid fa-circle"></i><span>Bootstrap</span></p>
-                                                <p><i class="fa-solid fa-circle"></i><span>Laravel</span></p>
-                                                <p><i class="fa-solid fa-circle"></i><span>Javascript</span></p><br>
-                                                <p><i class="fa-solid fa-circle"></i><span>Jquery</span></p>
-                                                <p><i class="fa-solid fa-circle"></i><span>Ajax</span></p>
-                                                <p><i class="fa-solid fa-circle"></i><span>SQL</span></p>
-                                            </div>
+                                </div>
+                                <div class="col col-sm-12 col-md-6">
+                                    <div id="portfolio-content">
+                                        <h3>School Management</h3>
+                                        <p>School Management develop with laravel.</p>
+                                        <span>Technology Used</span>
+                                        <div class="technology">
+                                            <p><i class="fa-solid fa-circle"></i><span>Bootstrap</span></p>
+                                            <p><i class="fa-solid fa-circle"></i><span>Laravel</span></p>
+                                            <p><i class="fa-solid fa-circle"></i><span>Javascript</span></p><br>
+                                            <p><i class="fa-solid fa-circle"></i><span>Jquery</span></p>
+                                            <p><i class="fa-solid fa-circle"></i><span>Ajax</span></p>
+                                            <p><i class="fa-solid fa-circle"></i><span>SQL</span></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <div>
-                                <div class="row ">
-                                    <div class="col col-sm-12 col-md-6">
-                                        <div class="portfolio-image d-flex justify-content-center">
-                                            <img src="image/project/ecommerce.png" alt="" width="90%" height="100%">
-                                        </div>
+                        <div>
+                            <div class="row ">
+                                <div class="col col-sm-12 col-md-6">
+                                    <div class="portfolio-image d-flex justify-content-center">
+                                        <img src="image/project/ecommerce.png" alt=""
+                                            width="90%" height="100%">
                                     </div>
-                                    <div class="col col-sm-12 col-md-6">
-                                        <div id="portfolio-content">
-                                            <h3>Ecommerce</h3>
-                                            <p>Ecommerce website and admin panel build with laravel.</p>
-                                            <span>Technology Used</span>
-                                            <div class="technology">
-                                                <p><i class="fa-solid fa-circle"></i><span>Bootstrap</span></p>
-                                                <p><i class="fa-solid fa-circle"></i><span>Laravel</span></p>
-                                                <p><i class="fa-solid fa-circle"></i><span>Javascript</span></p><br>
-                                                <p><i class="fa-solid fa-circle"></i><span>Jquery</span></p>
-                                                <p><i class="fa-solid fa-circle"></i><span>Ajax</span></p>
-                                                <p><i class="fa-solid fa-circle"></i><span>SQL</span></p>
-                                            </div>
+                                </div>
+                                <div class="col col-sm-12 col-md-6">
+                                    <div id="portfolio-content">
+                                        <h3>Ecommerce</h3>
+                                        <p>Ecommerce website and admin panel build with laravel.</p>
+                                        <span>Technology Used</span>
+                                        <div class="technology">
+                                            <p><i class="fa-solid fa-circle"></i><span>Bootstrap</span></p>
+                                            <p><i class="fa-solid fa-circle"></i><span>Laravel</span></p>
+                                            <p><i class="fa-solid fa-circle"></i><span>Javascript</span></p><br>
+                                            <p><i class="fa-solid fa-circle"></i><span>Jquery</span></p>
+                                            <p><i class="fa-solid fa-circle"></i><span>Ajax</span></p>
+                                            <p><i class="fa-solid fa-circle"></i><span>SQL</span></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-                            <!-- <div>
-                                hello
-                            </div>
-
-                            <div>
-                                hello
-                            </div> -->
-
-                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -503,18 +505,19 @@
 </section>
 
 
+
 <!----------------------------------- Contact ------------------------------->
 
 <section id="contact">
     <div class="content-box-md">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-9">
+                <div class="col-lg-9" data-aos="fade-up"  data-aos-duration="1000">
                     <h1 class="mb-3">Get In Touch</h1>
 
 
                     <form id="contact-form" method="post" action="" role="form">
-                        <div class="row g-3">
+                        <div class="row g-3" data-aos="zoom-in"  data-aos-duration="1500">
                             <div class="col-md-6">
                                 <label for="your-name" class="form-label">Your Name*</label>
                                 <input type="text" class="form-control" id="name" name="name"
@@ -580,75 +583,19 @@
 </a>
 
 
-
-    <!-- <script>
-        $(function() {
-            $('#contact-form').submit(function(event) {
-                event.preventDefault();
-        
-                $.ajax({
-                    url: '{{ route('contacts.store') }}',
-                    type: 'POST',
-                    data: $(this).serialize(),
-                    success: function(data) {
-                        console.log(data);
-                        $('#error-name').text('');
-                        $('#error-phone').text('');
-                        $('#error-email').text('');
-                        $('#error-subject').text('');
-
-                        if (data.errors) {
-                            if (data.errors.name) {
-                                $('#error-name').text(data.errors.name[0]);
-                            }
-
-                            if (data.errors.phone) {
-                                $('#error-phone').text(data.errors.price[0]);
-                            }
-
-                            if (data.errors.email) {
-                                $('#error-email').text(data.errors.image[0]);
-                            }
-                            if (data.errors.subject) {
-                                $('#error-subject').text(data.errors.image[0]);
-                            }
-                        } else {
-                            // Start Message 
-                            const Toast = Swal.mixin({
-                                toast: true,
-                                position: 'top',
-
-                                showConfirmButton: false,
-                                timer: 2500
-                            })
-
-                            Toast.fire({
-                                type: 'success',
-                                icon: 'success',
-                                title: 'Thank you for contact us. we will contact you shortly!!',
-                            })
-
-                            // toastr.success('Thank you for contact us. we will contact you shortly!!');
-
-                            //$("#contact_form")[0].reset();
-                            $('#contact-form').trigger('reset');
-
-                        }
-                    }
-                });
-            });
-        });
-    </script>
- -->
     
-    <!--------------------  Bootstrap js  --------------------->
+    <!-----------------------  Bootstrap js ----------------------->
     <script src="js/bootstrap/js/bootstrap.min.js"></script>
 
       <!----------------------------------- Silk js ----------------------------------------->
     <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
 
-    <!--------------------  Silk js  --------------------->
+    <!------------------------ Silk js -------------------------->
     <script type="text/javascript" src="js/jcarousel/slick.min.js"></script>
+
+    <!---------------------------  AOS --------------------------->
+    <!-- <script src="{{ asset('js/aos/aos.js') }}"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.js"></script>
 
       <!----------------------------------- Script js ----------------------------------------->
     <script src="js/script.js"></script>
@@ -656,28 +603,6 @@
       <!----------------------------------- Toaster js ----------------------------------------->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
-    <!-- <script>
-        @if (Session::has('message'))
-            var type = "{{ Session::get('alert-type', 'info') }}"
-            switch (type) {
-                case 'info':
-                    toastr.info(" {{ Session::get('message') }} ");
-                    break;
-
-                case 'success':
-                    toastr.success(" {{ Session::get('message') }} ");
-                    break;
-
-                case 'warning':
-                    toastr.warning(" {{ Session::get('message') }} ");
-                    break;
-
-                case 'error':
-                    toastr.error(" {{ Session::get('message') }} ");
-                    break;
-            }
-        @endif
-    </script> -->
 
 </body>
 
