@@ -480,6 +480,10 @@ hr {
                     Portfolio
 ===========================================================*/
 
+.portfolio-heading {
+	padding-bottom: 40px;
+}
+
 .portfolio-heading h3 {
 	font-size: 25px;
 	font-family: "Raleway";
