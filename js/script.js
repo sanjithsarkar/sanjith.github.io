@@ -292,3 +292,11 @@ new TypeIt('#type-it', {
 ========================================*/
 
 AOS.init();
+
+
+$( document ).ready(function() {
+   const firstScrollSpyEl = document.querySelector('[data-bs-spy="scroll"]')
+firstScrollSpyEl.addEventListener('activate.bs.scrollspy', () => {
+  console.log("done");
+})
+});
